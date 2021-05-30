@@ -15,11 +15,11 @@ namespace Smile
         ~DEMCloud();
     };
     
-    DEMCloud::DEMCloud(/* args */)
+    DEMCloud<dim>::DEMCloud(/* args */)
     {
     }
     
-    DEMCloud::~DEMCloud()
+    DEMCloud<dim>::~DEMCloud()
     {
     }
     
