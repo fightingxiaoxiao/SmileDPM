@@ -27,7 +27,6 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/application SRC_APP)
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/Cloud SRC_LIB)
 
-
 include_directories(${PROJECT_SOURCE_DIR}/include 
 					${PROJECT_SOURCE_DIR}/include/Cloud
 					${PROJECT_SOURCE_DIR}/include/Type)
