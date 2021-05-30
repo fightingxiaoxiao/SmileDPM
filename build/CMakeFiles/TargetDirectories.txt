@@ -1,4 +1,0 @@
-/run/media/smilemax/Data/SmileDPM/build/CMakeFiles/rebuild_cache.dir
-/run/media/smilemax/Data/SmileDPM/build/CMakeFiles/edit_cache.dir
-/run/media/smilemax/Data/SmileDPM/build/CMakeFiles/SmileDPM.dir
-/run/media/smilemax/Data/SmileDPM/build/CMakeFiles/cloud.dir
