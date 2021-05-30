@@ -23,15 +23,17 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../bin)
 
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
+include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/include/Cloud)
+include_directories(${PROJECT_SOURCE_DIR}/include/Type)
+include_directories(${PROJECT_SOURCE_DIR}/include/Particle)
+
 aux_source_directory(${PROJECT_SOURCE_DIR}/application SRC_APP)
 
-aux_source_directory(${PROJECT_SOURCE_DIR}/src/Cloud SRC_LIB)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src/Cloud SRC_LIB_CLOUD)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIB)
 
-include_directories(${PROJECT_SOURCE_DIR}/include 
-					${PROJECT_SOURCE_DIR}/include/Cloud
-					${PROJECT_SOURCE_DIR}/include/Type)
-
-add_library(cloud STATIC ${SRC_LIB})
+add_library(cloud STATIC ${SRC_LIB_CLOUD})
 
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 
