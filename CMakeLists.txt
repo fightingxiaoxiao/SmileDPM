@@ -36,4 +36,4 @@ add_library(cloud STATIC ${SRC_LIB})
 
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 
-add_executable(SmileDPM ${APP_SRC})
+add_executable(SmileDPM ${SRC_APP})
