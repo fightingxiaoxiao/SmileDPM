@@ -19,14 +19,17 @@
 
 #ifndef LIST_HPP
 #define LIST_HPP
+
 #include <vector>
+#include <list>
+
 namespace Smile
 {
     template <typename T>
-    using List = std::List<T>;
+    using List = std::list<T>;
 
     template <typename T>
-    using ArrayList = std::Vector<T>;
+    using ArrayList = std::vector<T>;
 
 } // namespace Smile
 
