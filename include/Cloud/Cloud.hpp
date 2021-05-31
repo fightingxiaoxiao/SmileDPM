@@ -1,8 +1,9 @@
 #ifndef CLOUD_HPP
 #define CLOUD_HPP
 
-#include "List.hpp"
+
 #include "Particle.hpp"
+#include "List.hpp"
 
 namespace Smile
 {

@@ -22,10 +22,11 @@ find_package(Boost REQUIRED)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
-include_directories(${PROJECT_SOURCE_DIR}/include)
-include_directories(${PROJECT_SOURCE_DIR}/include/Type)
-include_directories(${PROJECT_SOURCE_DIR}/include/Particle)
-include_directories(${PROJECT_SOURCE_DIR}/include/Cloud)
+include_directories(${PROJECT_SOURCE_DIR}/include
+					${PROJECT_SOURCE_DIR}/include/Type
+					${PROJECT_SOURCE_DIR}/include/List
+					${PROJECT_SOURCE_DIR}/include/Particle
+					${PROJECT_SOURCE_DIR}/include/Cloud)
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/application SRC_APP)
 
