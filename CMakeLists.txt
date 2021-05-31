@@ -17,6 +17,8 @@ ENDIF ()
 
 find_package(Eigen3 REQUIRED)
 
+find_package(Armadillo REQUIRED)
+
 find_package(Boost REQUIRED)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../bin)
@@ -26,7 +28,8 @@ include_directories(${PROJECT_SOURCE_DIR}/include
 					${PROJECT_SOURCE_DIR}/include/Type
 					${PROJECT_SOURCE_DIR}/include/List
 					${PROJECT_SOURCE_DIR}/include/Particle
-					${PROJECT_SOURCE_DIR}/include/Cloud)
+					${PROJECT_SOURCE_DIR}/include/Cloud
+					${PROJECT_SOURCE_DIR}/include/Grid)
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/application SRC_APP)
 

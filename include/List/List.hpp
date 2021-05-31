@@ -23,7 +23,10 @@
 namespace Smile
 {
     template <typename T>
-    using List = std::vector<T>;
+    using List = std::List<T>;
+
+    template <typename T>
+    using ArrayList = std::Vector<T>;
 
 } // namespace Smile
 
